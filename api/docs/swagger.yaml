@@ -168,7 +168,7 @@ paths:
       summary: User registration
       tags:
       - Auth
-  /transactions:
+  /test:
     get:
       description: Fetches past transactions
       produces:
@@ -210,7 +210,7 @@ paths:
       summary: Send coins
       tags:
       - Transactions
-  /user/email:
+  /:
     put:
       consumes:
       - application/x-www-form-urlencoded
@@ -235,7 +235,7 @@ paths:
       summary: Update email
       tags:
       - User
-  /user/password:
+  /*:
     put:
       consumes:
       - application/x-www-form-urlencoded
